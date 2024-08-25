@@ -26,7 +26,7 @@ public class NepaliCoins {
 
     public static void main(String[] args) {
         int coins[] = { 2, 1, 5, 10, 50, 20, 500, 100, 1000 };
-        int amount = 590;
+        int amount = 1240;
         System.out.println(nepaliCoins(coins, amount));
     }
 }
