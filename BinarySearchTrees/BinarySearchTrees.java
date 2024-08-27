@@ -86,6 +86,14 @@ public class BinarySearchTrees {
             }
 
         }
+        public static int heightOfTree(Node root)
+        {
+            if(root==null)
+            return 0;
+            int lh=heightOfTree(root.left);
+            int rh=heightOfTree(root.right);
+            return Math.max(lh, rh)+1;
+        }
 
     }
   
@@ -101,6 +109,8 @@ public class BinarySearchTrees {
         tree.inOrder(root);
         System.out.println();
         tree.levelOrder(root);
+        System.out.println();
+        System.out.println(tree.heightOfTree(root));
 
     }
     
